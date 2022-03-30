@@ -3,18 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="description" content="Black & White">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="black, white, blackandwhite, photography, design, aesthetics, bnw, b&w"/>
+    <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="index,follow"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@place-holder">
+    <meta name="twitter:creator" content="@anmolbhardwajj">
+    <meta name="twitter:title" content="placeholder.raw">
+    <meta name="twitter:image" content="https://i.imgur.com/4FPD7xo.png">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta property='og:title' content='Placeholder'/>
+    <meta property='og:image' content='https://i.imgur.com/4FPD7xo.png'/>
+    <meta property='og:description' content='Experience Designer'/>
+    <meta property='og:url' content='anmolbhardwaj.in'/>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,7 +34,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>placeholder.raw</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +49,29 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBqMWQ07Qph-LtNDFfqsbqOaX9tNqjGBoA",
+        authDomain: "placeholder-raw.firebaseapp.com",
+        projectId: "placeholder-raw",
+        storageBucket: "placeholder-raw.appspot.com",
+        messagingSenderId: "971343971567",
+        appId: "1:971343971567:web:dcb1f22e5459c30408071a",
+        measurementId: "G-4YVHQ5Y7DD"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
