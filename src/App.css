@@ -7,7 +7,7 @@ nav{
   position: fixed;
   top:0;
   width:100%;
-  background-color: white;
+  background-color: #060606;
   
 }
 
@@ -23,7 +23,7 @@ nav{
 }
 
 .navinner a{
-  color:#060606;
+  color:white;
 }
 
 .top-right{
@@ -67,6 +67,7 @@ img:hover{
 
 .tagline{
   font-size: 16px;
+  color:#747474;
 }
 
 .cta{

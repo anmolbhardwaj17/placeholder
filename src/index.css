@@ -23,8 +23,10 @@ body{
   margin:0px;
   padding:0px;
   font-family: 'Sk';
-  background-color: white;
-  color: #060606;
+  /* background-color: white;
+  color: #060606; */
+  background-color: #060606;
+  color: white;
 }
 
 /* width */
