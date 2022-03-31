@@ -81,6 +81,12 @@ img:hover{
   font-size: 24px;
 }
 
+.end{
+  padding:48px 0px;
+  text-align: center;
+  color:#2f2f2f;
+}
+
 @media(max-width:768px){
   img{
     width:98%;

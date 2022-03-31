@@ -44,6 +44,8 @@ function App() {
         </nav>
       <h1 className="title">placeholder.raw</h1>
       <p className="tagline">"Color is descriptive. Black and white is interpretive."</p>
+      {/* <h1 className="title">placeholder.raw</h1>
+      <p className="tagline">"Color is descriptive. Black and white is interpretive."</p> */}
       <div className="container">
         <div className="grid">
           {data.map((value) => {
@@ -55,6 +57,9 @@ function App() {
             );
           })}
         </div>
+      </div>
+      <div className="end">
+        <h2 >placeholder.raw</h2>
       </div>
 
     </div>
