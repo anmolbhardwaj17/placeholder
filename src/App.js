@@ -20,7 +20,7 @@ function App() {
     axios(config)
     .then(function (response) {
       console.log(response.data.photoset.photo);
-      setData(response.data.photoset.photo);
+      setData([...response.data.photoset.photo].reverse());
     })
     .catch(function (error) {
       console.log(error);
