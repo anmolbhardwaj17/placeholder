@@ -5,6 +5,7 @@
 
 nav{
   position: fixed;
+  font-family: "Sk";
   top:0;
   width:100%;
   background-color: #060606;
@@ -66,8 +67,10 @@ img:hover{
 }
 
 .tagline{
-  font-size: 16px;
+  font-size: 20px;
   color:#747474;
+  font-weight: bold;
+  font-family: 'Sk';
 }
 
 .cta{
@@ -85,6 +88,8 @@ img:hover{
   padding:48px 0px;
   text-align: center;
   color:#2f2f2f;
+  font-weight: bold;
+  font-family: 'Sk';
 }
 
 @media(max-width:768px){
@@ -111,7 +116,7 @@ img:hover{
 
 @media(max-width:455px){
   .App{
-    width:98%;
+    width:96%;
     margin:auto;
   }
   .title{

@@ -42,8 +42,8 @@ function App() {
             </div>
             </div>   
         </nav>
-      <h1 className="title">placeholder.raw</h1>
-      <p className="tagline">"Color is descriptive. Black and white is interpretive."</p>
+      <p className="title">"Color is descriptive. Black and white is interpretive."</p>
+      <p className="tagline">placeholder.raw</p>
       {/* <h1 className="title">placeholder.raw</h1>
       <p className="tagline">"Color is descriptive. Black and white is interpretive."</p> */}
       <div className="container">
