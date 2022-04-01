@@ -51,7 +51,7 @@ img{
   object-fit: cover;
   height:98%;
   transition: 0.2s ease-in-out;
-  border-radius: 32px;
+  border-radius: 16px;
 }
 
 img:hover{
@@ -126,8 +126,8 @@ img:hover{
   }
   
   img{
-    width:96%;
-    padding:4%;
+    width:98%;
+    padding:2%;
     object-fit: cover;
     height:98%;
     transition: 0.2s ease-in-out;
