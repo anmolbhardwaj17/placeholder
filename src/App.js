@@ -1,6 +1,10 @@
 import React , {useEffect, useState} from 'react';
 import axios from 'axios';
+import Modal from 'react-modal';
+import { Lightbox } from "react-modal-image";
 import './App.css';
+
+
 
 
 function App() {
@@ -52,7 +56,7 @@ function App() {
             return (
               <div className="padding">
               {/* //<img src={`https://live.staticflickr.com/65535/51972451305_e27e0bb21f.jpg`}/> */}
-              <img src={`https://live.staticflickr.com/${value.server}/${value.id}_${value.secret}.jpg`}/>
+              <img className="singleImage" src={`https://live.staticflickr.com/${value.server}/${value.id}_${value.secret}.jpg`}/>
               </div>
             );
           })}
@@ -61,6 +65,7 @@ function App() {
       <div className="end">
         <h2 >placeholder.raw</h2>
       </div>
+      <div className="midbg"></div>
 
     </div>
   );
