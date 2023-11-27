@@ -47,3 +47,22 @@ body{
   background: rgba(0, 0, 0, 0);
   border-radius: 10px;
 }
+
+.ReactModal__Overlay {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(16px);
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.ReactModal__Content {
+  width: 30%; 
+  height: 100%; 
+  max-height: 80%; 
+  margin: auto;
+  border: 4px solid #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}

@@ -10,6 +10,8 @@ import './App.css';
 function App() {
 
   const [data, setData] = useState([]);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
     var config = {
@@ -32,6 +34,16 @@ function App() {
   
   }, [])
 
+  const openModal = (image) => {
+    setSelectedImage(image);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+    setSelectedImage(null);
+  };
+
   //https://live.staticflickr.com/65535/51972451305_e27e0bb21f.jpg
   
 
@@ -46,7 +58,7 @@ function App() {
             </div>
             </div>   
         </nav>
-      <p className="title">"Color is descriptive. Black and white is interpretive."</p>
+      <p className="title">"What's pinterest?"</p>
       <p className="tagline">placeholder.raw</p>
       {/* <h1 className="title">placeholder.raw</h1>
       <p className="tagline">"Color is descriptive. Black and white is interpretive."</p> */}
@@ -56,7 +68,11 @@ function App() {
             return (
               <div className="padding">
               {/* //<img src={`https://live.staticflickr.com/65535/51972451305_e27e0bb21f.jpg`}/> */}
-              <img className="singleImage" src={`https://live.staticflickr.com/${value.server}/${value.id}_${value.secret}.jpg`}/>
+              <img 
+              className="singleImage" 
+              src={`https://live.staticflickr.com/${value.server}/${value.id}_${value.secret}.jpg`}
+              onClick={() => openModal(`https://live.staticflickr.com/${value.server}/${value.id}_${value.secret}.jpg`)}
+              />
               </div>
             );
           })}
@@ -66,6 +82,13 @@ function App() {
         <h2 >placeholder.raw</h2>
       </div>
       <div className="midbg"></div>
+      <Modal isOpen={modalIsOpen} onRequestClose={closeModal} contentLabel="Image Modal">
+        <img 
+    src={selectedImage} 
+    style={{ width: '100%', height: '100%', textAlign:'center' }} 
+    alt="Selected"
+  />
+      </Modal>
 
     </div>
   );
